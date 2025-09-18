@@ -1,0 +1,16 @@
+
+/* Hide the site name on the homepage top_img */
+#page-header.full_page #site-title {
+  display: none !important;
+}
+
+
+#rain-container {
+  position: fixed; /* 固定在屏幕上，不随页面滚动 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999; /* 让雨在内容之上，但在弹窗之下 */
+  pointer-events: none; /* 让鼠标可以“穿透”雨滴，点击到下面的内容 */
+}
